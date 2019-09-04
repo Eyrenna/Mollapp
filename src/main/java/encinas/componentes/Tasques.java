@@ -11,7 +11,7 @@ public class Tasques {
     //PROPIEDADES
 
     private Target target = null;
-    private Filtre filtre = null;
+    private List<Filtre> filtres = new ArrayList<>();
 
     //CONSTRUCTOR
 
@@ -22,7 +22,6 @@ public class Tasques {
     //MÉTODOS
 
     public List<Filtre> getTasques(){
-        List<Filtre> filtres = new ArrayList<>();
         return filtres;
     }
 
