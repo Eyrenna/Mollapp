@@ -37,5 +37,10 @@ public class Tasques {
         return this.target;
     }
 
-    public void execucio(String mensaje){}
+    public void execucio(String mensaje){
+        for (Filtre tasca : getTasques()){
+            tasca.execucio(mensaje);
+        }
+        getTarget().execucio(mensaje);
+    }
 }
