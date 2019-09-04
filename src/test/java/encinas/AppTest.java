@@ -1,7 +1,6 @@
 package encinas;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 import encinas.componentes.Autenticacio;
 import encinas.componentes.Autoritzacio;
@@ -33,5 +32,7 @@ public class AppTest {
         assertEquals(1, prog.getTasques().getTasques().size());
         prog.setTasca(new Autenticacio());
         assertEquals(2, prog.getTasques().getTasques().size());
+        prog.setTasca(new Autenticacio());
+        assertEquals(3, prog.getTasques().getTasques().size());
     }
 }
