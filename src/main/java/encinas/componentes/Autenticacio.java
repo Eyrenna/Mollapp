@@ -12,5 +12,7 @@ public class Autenticacio implements Filtre {
 
     //MÉTODOS
 
-    public void execucio(String mensaje){}
+    public void execucio(String mensaje){
+        System.out.print("\nAutenticació OK para " + mensaje);
+    }
 }

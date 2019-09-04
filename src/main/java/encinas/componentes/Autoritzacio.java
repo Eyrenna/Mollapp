@@ -12,5 +12,6 @@ public class Autoritzacio implements Filtre {
 
     //MÉTODOS
 
-    public void execucio(String mensaje){}
+    public void execucio(String mensaje){
+        System.out.print("\nAutorització OK para " + mensaje);}
 }

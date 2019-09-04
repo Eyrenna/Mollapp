@@ -7,8 +7,7 @@ public class ProgramadorTasques {
 
     //PROPIEDADES
 
-    private Target target = null;
-
+    private Tasques tasques = new Tasques();
 
     //CONSTRUCTOR
 
@@ -16,15 +15,21 @@ public class ProgramadorTasques {
     }
 
     public ProgramadorTasques(Target target) {
-        this.target = target;
+         tasques.setTarget(target);
     }
 
 
     //MÉTODOS
 
-    public Tasques getTasques(){}
+    public Tasques getTasques(){
+        return this.tasques;
+    }
 
-    public void setTasca(Filtre filtre){}
+    public void setTasca(Filtre filtre){
+        getTasques().afegirTasca(filtre);
+    }
 
-    public void executar(String mensaje){}
+    public void executarTasques(String mensaje){
+        tasques.getTarget().execucio(mensaje);
+    }
 }
