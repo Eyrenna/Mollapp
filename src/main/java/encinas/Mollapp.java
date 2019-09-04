@@ -5,6 +5,10 @@ import encinas.interfaces.Client;
 
 public class Mollapp implements Client {
 
+    //PROPIEDADES
+
+    private ProgramadorTasques programador = null;
+
     //CONSTRUCTOR
 
     public Mollapp() {
@@ -13,7 +17,11 @@ public class Mollapp implements Client {
 
     //MÉTODOS
 
-    public void setProgramadorTasques(ProgramadorTasques programador){}
+    public void setProgramadorTasques(ProgramadorTasques programador){
+        this.programador = programador;
+    }
 
-    public void enviarPeticio(String peticio){}
+    public void enviarPeticio(String peticio){
+        programador.executarTasques(peticio);
+    }
 }

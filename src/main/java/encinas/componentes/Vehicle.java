@@ -13,5 +13,5 @@ public class Vehicle implements Target {
     //MÉTODOS
 
     public void execucio(String mensaje){
-        System.out.print("\nPuerta abierta " + mensaje);}
+        System.out.print("\nPuerta abierta " + mensaje + "!");}
 }
