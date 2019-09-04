@@ -1,6 +1,9 @@
 package encinas;
 
+import encinas.componentes.Autenticacio;
+import encinas.componentes.Autoritzacio;
 import encinas.componentes.ProgramadorTasques;
+import encinas.componentes.Vehicle;
 
 public final class App {
     public static void main(String[] args) {
