@@ -30,6 +30,9 @@ public class ProgramadorTasques {
     }
 
     public void executarTasques(String mensaje){
+        for (Filtre tasca : tasques.getTasques()){
+            tasca.execucio(mensaje);
+        }
         tasques.getTarget().execucio(mensaje);
     }
 }
