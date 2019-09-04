@@ -1,5 +1,7 @@
 package encinas;
 
+import encinas.componentes.ProgramadorTasques;
+
 public final class App {
     public static void main(String[] args) {
 
